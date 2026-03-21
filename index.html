@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+
+  <main class="app-shell">
+    <section class="panel panel-compose" aria-label="Write a diary entry">
+      <h1>Vibe Vault</h1>
+      <p class="tagline">Track your mood, save your thoughts, and see your story build up.</p>
+
+      <label for="title">Entry title</label>
+      <input id="title" placeholder="Today felt like..." maxlength="80" />
+
+      <label for="editor">Your note</label>
+      <textarea id="editor" placeholder="Write your thoughts..."></textarea>
+
+      <div class="actions-row">
+        <button id="saveBtn" type="button">Save Entry</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="panel panel-feed" aria-label="Saved entries">
+      <div class="feed-header">
+        <h2>Your Entries</h2>
+        <button id="clearBtn" class="ghost-btn" type="button">Clear All</button>
+      </div>
+      <div id="feed" class="feed-list"></div>
+    </section>
+  </main>
+
+  <div id="emoji-container" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
