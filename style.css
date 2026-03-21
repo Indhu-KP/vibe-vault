@@ -89,6 +89,24 @@ h2 {
   color: rgba(31, 27, 45, 0.75);
 }
 
+.auth-block {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px dashed rgba(31, 27, 45, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.auth-actions {
+  flex-wrap: wrap;
+}
+
+#loginBtn {
+  background: linear-gradient(120deg, #2f6ea1 0%, #3b82b7 100%);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(59, 130, 183, 0.24);
+}
+
 label {
   display: block;
   margin: 10px 0 8px;
@@ -200,6 +218,22 @@ button {
 .entry small {
   display: block;
   color: rgba(31, 27, 45, 0.72);
+}
+
+.entry-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.entry-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.danger-btn {
+  background: rgba(200, 42, 42, 0.12);
+  color: #8d1f1f;
 }
 
 /* Mood styles */

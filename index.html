@@ -18,6 +18,20 @@
       <h1>Vibe Vault</h1>
       <p class="tagline">Track your mood, save your thoughts, and see your story build up.</p>
 
+      <div class="auth-block" aria-label="Account access">
+        <label for="userId">User ID</label>
+        <input id="userId" placeholder="Choose your user ID" maxlength="80" />
+
+        <label for="secretTitle">Secret title</label>
+        <input id="secretTitle" type="password" placeholder="Use a private phrase" maxlength="200" />
+
+        <div class="actions-row auth-actions">
+          <button id="registerBtn" class="ghost-btn" type="button">Register</button>
+          <button id="loginBtn" type="button">Login</button>
+          <button id="logoutBtn" class="ghost-btn" type="button">Logout</button>
+        </div>
+      </div>
+
       <label for="title">Entry title</label>
       <input id="title" placeholder="Today felt like..." maxlength="80" />
 
