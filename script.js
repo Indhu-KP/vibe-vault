@@ -11,10 +11,10 @@ const loginBtn = document.getElementById("loginBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const statusEl = document.getElementById("status");
 
-const API_URL = "http://localhost:5000/api/entries";
-const REGISTER_URL = "http://localhost:5000/api/auth/register";
-const LOGIN_URL = "http://localhost:5000/api/auth/login";
-const LOGOUT_URL = "http://localhost:5000/api/auth/logout";
+const API_URL = "https://vibe-vault-backend-eta.vercel.app/api/entries";
+const REGISTER_URL = "https://vibe-vault-backend-eta.vercel.app/api/auth/register";
+const LOGIN_URL = "https://vibe-vault-backend-eta.vercel.app/api/auth/login";
+const LOGOUT_URL = "https://vibe-vault-backend-eta.vercel.app/api/auth/logout";
 const LOCAL_KEY = "vibe-vault-entries";
 const SESSION_TOKEN_KEY = "vibe-vault-token";
 const SESSION_USER_KEY = "vibe-vault-user";
